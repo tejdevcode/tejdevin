@@ -16,7 +16,11 @@ export default function Home() {
           priority
         />
 
-        
+        <ul className="grid gap-4 auto-fit-[120px] w-full mx-auto">
+          <li>jkjkjkjoioi</li>
+          <li>jkjkjkjoioi</li>
+          <li>jkjkjkjoioi</li>
+        </ul>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
@@ -32,7 +36,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+          Learn 
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
