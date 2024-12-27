@@ -73,10 +73,10 @@ export default {
     require('tailwindcss/plugin')(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          'auto-fill': (value: string) => ({
+          'auto-fill': (value) => ({
             gridTemplateColumns: `repeat(auto-fill, minmax(${value}, 1fr))`,
           }),
-          'auto-fit': (value: string) => ({
+          'auto-fit': (value) => ({
             gridTemplateColumns: `repeat(auto-fit, minmax(${value}, 1fr))`,
           }),
         },
