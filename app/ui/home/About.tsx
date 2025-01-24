@@ -11,6 +11,9 @@ import Nodejs_certification from "../../../public/awards/Nodejs_certification.jp
 import Expressjs_certification from "../../../public/awards/Expressjs_certification.jpg"
 import PHP_certification from "../../../public/awards/PHP_certification.jpg"
 import SQL_certification from "../../../public/awards/SQL_certification.jpg"
+import { FiExternalLink } from "react-icons/fi";
+
+
 
 /* import 'glightbox/dist/css/glightbox.min.css'; */
 /* import AwardsGallery from "./AwardsGallery" */
@@ -113,16 +116,18 @@ const About = () => {
             <ul className="space-y-4 list-disc">
                <li>
                   <h3 className="italic">SR.HTML Developer (currently working in reactjs and nextjs) :- Oct 2017 – Present </h3>
-                  <p className="mb-1 ">⚡ <a href="https://www.uplers.com/" className="underline">Uplers Solutions Pvt. Ltd.(mavlers)</a></p>
+                  <p className="mb-1 ">⚡ <a href="https://www.uplers.com/" className="underline hover:no-underline">Uplers Solutions Pvt. Ltd.(mavlers)
+                     <FiExternalLink className="inline-block ml-2" /></a> </p>
                   <p>Since October 2017, I have gained extensive experience and expertise in a wide range of front-end technologies, including SASS, Foundation, WordPress Frontend, JavaScript, jQuery, TypeScript, React, Next.js, Git, GitHub, Figma, and TailwindCSS. Throughout my journey, I have developed a strong proficiency in building responsive, user-centric web applications while leveraging these tools to create clean, efficient, and scalable code.</p>
                </li>
                <li>
                   <h3 className="italic">Web Designer :- May 2015 – Sep 2017 </h3>
-                  <p className="mb-1 ">⚡ <a href="https://lujayninfoways.com/" className="underline">Lujayn Infoways</a></p>
+                  <p className="mb-1 ">⚡ <a href="https://lujayninfoways.com/" className="underline hover:no-underline">Lujayn Infoways <FiExternalLink className="inline-block ml-2" />
+                  </a></p>
                   <p>I have developed expertise in HTML, CSS, JavaScript, jQuery, Bootstrap, WordPress with Visual Composer, SASS, and Photoshop. My experience includes creating visually appealing, responsive websites while leveraging these tools to deliver seamless user experiences and efficient front-end solutions.</p>
                </li>
                <li><h3 className="italic">App Designer/ Web Designer :- January 2015 – May 2015 </h3>
-                  <p className="mb-1">⚡ <span className="underline">Little Play Studio (MSME)</span></p>
+                  <p className="mb-1">⚡ <span className="underline">Little Play Studio (MSME) </span></p>
                   <p>I have gained expertise in HTML, CSS, Photoshop, and various aspects of web and app design, including logo creation. My experience includes crafting visually engaging websites and designing intuitive user interfaces, with a focus on delivering creative and functional design solutions.</p></li>
             </ul>
             <br />
@@ -136,9 +141,11 @@ const About = () => {
                      <a href={`${item.image.src}`} className="glightbox3 border border-gray-200 rounded shadow-sm inline-block " data-gallery="gallery1" target="_blank" title={item?.description}>
                         <Image src={item.image} alt="Focus On Growth Award" width={300} height={200} />
                      </a>
-                     <a href={`${item.image.src}`} target="_blank">
-                        <figcaption className="text-sm capitalize">Awarded for the best <br />{item?.description}</figcaption>
-                     </a>
+
+                     <figcaption className="text-sm capitalize mb-2">
+                        <a href={`${item.image.src}`} target="_blank">Awarded for the best <br />{item?.description}</a>
+                     </figcaption>
+
                   </figure>
                )}
 
@@ -153,10 +160,10 @@ const About = () => {
             <h2 className="text-green-600 font-semibold text-xl mb-2">
                Certifications
             </h2>
-            <ul className="awardsitem grid gap-1 auto-fill-[160px]">
+            <ul className="awardsitem grid gap-1 md:auto-fill-[200px] auto-fill-[160px]">
                {Achievements?.map((item, i) =>
-                  <li className="border border-gray-400" key={i}>
-                     <a href={item?.url} target="_blank" title={item?.description}><Image src={item?.image} alt={item?.description} /></a>
+                  <li className="border border-gray-400 relative group" key={i}>
+                     <a href={item?.url} target="_blank" title={item?.description}><Image src={item?.image} alt={item?.description} /><FiExternalLink className="absolute right-[2px] bottom-[2px] bg-white md:opacity-0 group-hover:opacity-100 transition-all" /></a>
                   </li>
                )}
             </ul>

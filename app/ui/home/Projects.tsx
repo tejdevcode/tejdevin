@@ -7,6 +7,8 @@ import nextdeshboard from "@/public/projects/mini/deshboardNextjsthumb.jpg";
 import sass from "@/public/projects/mini/sassBluetiqthumb.jpg";
 import bootstrap from "@/public/projects/mini/BootstrapVibethumb.jpg";
 import html from "@/public/projects/mini/careHTMLthumb.jpg";
+import { FaGithubAlt } from "react-icons/fa";
+
 
 interface CardItem {
    id: number;
@@ -14,6 +16,7 @@ interface CardItem {
    name?: string;
    url?: string;
    github?: string;
+   codeurl?: string;
    tags?: string[];
 
 }
@@ -25,6 +28,7 @@ const Projects = () => {
          name: "Teahouse",
          url: "https://nextjstea.vercel.app/",
          github: "https://github.com/tejdevcode/nextjstea",
+         codeurl: "https://github1s.com/tejdevcode/nextjstea",
          tags: ['NextJS', 'ReactJS', 'AppRouter', 'HTML', 'CSS', 'Vercel', 'GitHub']
       },
       {
@@ -33,6 +37,7 @@ const Projects = () => {
          name: "ReactGarden",
          url: "https://reactwptype.netlify.app/",
          github: "https://github.com/tejdevcode/reactwptype",
+         codeurl: "https://github1s.com/tejdevcode/reactwptype",
          tags: ['ReactJS', 'WordPress', 'WPGraphQL', 'WPACF', 'HTML', 'CSS', 'Netlify', 'GitHub']
       },
       {
@@ -41,6 +46,7 @@ const Projects = () => {
          name: "tailwindBurger",
          url: "https://tejdevcode.github.io/tailwindspotlight/",
          github: "https://github.com/tejdevcode/tailwindspotlight",
+         codeurl: "https://github1s.com/tejdevcode/tailwindspotlight",
          tags: ['TailwindCSS', 'HTML', 'CSS', 'Jquery', 'GitHub', 'GitHubPages']
       },
       {
@@ -49,6 +55,7 @@ const Projects = () => {
          name: "wpacfpro",
          url: "https://dev-wpacfpro.pantheonsite.io/",
          github: "https://github.com/tejdevcode/tezacfpwp",
+         codeurl: "https://github1s.com/tejdevcode/tezacfpwp",
          tags: ['WordPress', 'WPACF', 'PHP', 'HTML', 'CSS', 'Jquery', 'GitHub', 'pantheon']
       },
       {
@@ -57,7 +64,8 @@ const Projects = () => {
          name: "nextDeshboard",
          url: "https://nextjsdashapp.vercel.app/",
          github: "https://github.com/tejdevcode/nextjsdashboard",
-         tags: ['NextJS15', 'ReactJS', 'AppRouter', 'HTML', 'CSS', 'Vercel', 'GitHub']
+         codeurl: "https://github1s.com/tejdevcode/nextjsdashboard",
+         tags: ['NextJS15', 'ReactJS', 'AppRouter', 'HTML', 'CSS', 'Vercel', ' NeonPostgres', 'GitHub']
       },
       {
          id: 6,
@@ -65,6 +73,7 @@ const Projects = () => {
          name: "sass",
          url: "https://tejdevcode.github.io/Blutiquegit/",
          github: "https://github.com/tejdevcode/Blutiquegit",
+         codeurl: "https://github1s.com/tejdevcode/Blutiquegit",
          tags: ['SASS/SCSS', 'HTML', 'Jquery', 'GitHub', 'GitHubPages']
       },
       {
@@ -73,6 +82,7 @@ const Projects = () => {
          name: "bootstrap",
          url: "https://tejdevcode.github.io/Blutiquegit/",
          github: "https://github.com/tejdevcode/Blutiquegit",
+         codeurl: "https://github1s.com/tejdevcode/Blutiquegit",
          tags: ['Bootstrap', 'SASS/SCSS', 'HTML', 'Jquery', 'GitHub', 'GitHubPages']
       },
       {
@@ -81,6 +91,7 @@ const Projects = () => {
          name: "html",
          url: "https://tejdevcode.github.io/htmlproject/",
          github: "https://github.com/tejdevcode/htmlproject",
+         codeurl: "https://github1s.com/tejdevcode/htmlproject",
          tags: ['HTML', 'CSS', 'Jquery', 'GitHub', 'GitHubPages']
       },
    ];
@@ -95,29 +106,35 @@ const Projects = () => {
                   <div
                      className=" border bg-gray-100 duration-300 p-1 relative group overflow-hidden"
                      key={item?.id} >
-                     <div className="absolute -top-[100%] group-hover:top-1 z-10 transition-all duration-300 w-full h-full bg-black bg-opacity-75 left-0">
+
+                     <figure className="relative w-full pb-[87%] border border-gray-300">
+                        <Image src={item?.logo} className="w-full absolute object-cover" alt="" />
+                     </figure>
+
+                     <div className="sm:absolute sm:-top-[100%] group-hover:top-1 z-10 transition-all duration-300 w-full sm:h-full sm:bg-black sm:bg-opacity-75 left-0">
                         {/* <div className="px-2 font-bold text-xl mb-2">{name}</div> 
                         <p className="px-2  text-white">
                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         </p>*/}
-                        <ul className="text-center mt-7 p-4">
+                        <ul className="text-center sm:mt-7 p-2 sm:p-4">
                            {item?.tags?.map((tag, i) =>
-                              <li key={i} className="inline-block bg-white rounded-full px-2 m-1 text-sm">{tag} </li>
+                              <li key={i} className="inline-block bg-slate-300 sm:bg-white rounded-full px-2 m-1 text-sm">{tag} </li>
                            )}
                         </ul>
                      </div>
-                     <figure className="relative w-full pb-[87%] border border-gray-300 mb-2">
-                        <Image src={item?.logo} className="w-full absolute object-cover" alt="" />
-                     </figure>
 
-                     <div className=" px-2 py-4 flex justify-center absolute -bottom-16 group-hover:bottom-0 transition-all duration-300 z-10">
-                        <a className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-1 rounded mx-1 "
+                     <div className=" px-2 sm:py-4 flex justify-center sm:absolute sm:-bottom-16 group-hover:bottom-0 transition-all duration-300 z-10 mx-auto">
+                        <a className="bg-blue-500 hover:bg-blue-700 text-white px-4 py-1 rounded m-1 leading-tight"
                            href={item?.github}>
                            Source code
                         </a>
-                        <a className="bg-green-500 hover:bg-green-700 text-white px-4 py-1 rounded mx-1 "
-                           href={item?.url}>
+                        <a className="bg-green-500 hover:bg-green-700 text-white px-4 py-1 rounded m-1 "
+                           href={item?.url} target="_blank">
                            SiteLink
+                        </a>
+                        <a className=" text-black sm:text-white px-1 py-1 rounded mx-1 mt-2 text-xl"
+                           href={item?.codeurl} target="_blank">
+                           <FaGithubAlt />
                         </a>
                      </div>
                   </div>

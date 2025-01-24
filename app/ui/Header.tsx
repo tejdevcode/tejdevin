@@ -40,7 +40,7 @@ const Header = () => {
                   <h2 className="font-semibold text-xl cursor-pointer">
                      <Link href={'/'}>
                         <span className="PlayfairDisplay">&lt; Tej<span className="text-green-500 "> R </span>/&gt;</span>
-                        <p className="text-sm tracking-wide">Web Developer</p>
+                        <span className="text-sm tracking-wide block">Web Developer</span>
                      </Link>
                   </h2>
                </div>
@@ -71,7 +71,7 @@ const Header = () => {
                            className="hover:scale-105 duration-200 font-semibold cursor-pointer"
                            key={id} >
                            <Link onClick={() => setMenu(!menu)}
-                              href={text} className="active" >
+                              href={`#${text}`} className="active" >
                               {text}
                            </Link>
                         </li>

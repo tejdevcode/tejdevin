@@ -64,7 +64,7 @@ function Contact() {
             <div className="flex flex-wrap gap-4">
                <div className="contactitem w-full sm:w-[320px]">
                   <div className="border border-gray-300 rounded-lg p-2 sm:p-5">
-                     <h3 className="text-green-600 font-semibold text-xl mb-2">"I'm here to help you"</h3>
+                     <h3 className="text-green-600 font-semibold text-xl mb-2">"I'm happy to help you"</h3>
                      <span>Feel free to reach out with any inquiries.</span>
                      <ul className="mt-4">
                         <li><FaEnvelope className="inline-block mr-2" />
@@ -79,7 +79,7 @@ function Contact() {
                         onSubmit={handleSubmit(onSubmit)}
                         // action="https://getform.io/f/raeqjora"
                         // method="POST"
-                        className="bg-slate-200 px-8 py-6 rounded-xl w-full"
+                        className="bg-slate-200 px-4 py-3 sm:px-8 sm:py-6 rounded-xl w-full"
                      >
                         <h1 className="text-xl font-semibold mb-4">Get in Touch</h1>
                         <div className="flex flex-col mb-4">

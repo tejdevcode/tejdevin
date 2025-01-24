@@ -64,6 +64,7 @@ export default {
       },
       container: {
         center: true,
+
       },
       screens: {
         xsm: '480px',

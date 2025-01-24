@@ -19,15 +19,20 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  @apply box-border;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Varela Round", Arial, Helvetica, sans-serif;
 }
 
+/* 
 .container {
   @apply px-2
-}
+} */
 
 .PlayfairDisplay {
   font-family: "Playfair Display", serif;
