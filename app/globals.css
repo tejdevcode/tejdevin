@@ -14,8 +14,22 @@
   }
 }
 
+html {
+  scroll-padding-top: 78px;
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  @apply px-2
+}
+
+.PlayfairDisplay {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
 }

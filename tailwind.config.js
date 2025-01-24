@@ -50,6 +50,9 @@ export default {
         '8xl': ['6rem', { lineHeight: '1' }],
         '9xl': ['8rem', { lineHeight: '1' }],
       },
+      scrollBehavior: {
+        smooth: 'smooth',
+      },
       maxWidth: ({ theme, breakpoints }) => ({
         ...theme('spacing'),
         container: '85.375rem',
@@ -58,6 +61,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      container: {
+        center: true,
       },
       screens: {
         xsm: '480px',

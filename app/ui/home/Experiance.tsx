@@ -1,0 +1,163 @@
+import Image from "next/image"
+import html from "@/public/html5.svg";
+import css from "@/public/CSS3_logo.svg";
+import javascript from "@/public/javascript.svg";
+import react from "@/public/React-icon.svg";
+import nextjs from "@/public/nextjs.svg";
+import typescript from "@/public/Typescript_logo_2020.svg"
+import jquery from "@/public/JQuery_icon.svg";
+import bootstrap from "@/public/Bootstrap_logo.svg"
+import tailwind from "@/public/Tailwind_CSS_Logo.svg"
+import sass from "@/public/sass.svg"
+import photoshop from "@/public/Adobe_Photoshop_CS6_icon.svg"
+import git from "@/public/Git_icon.svg"
+import github from "@/public/github.svg"
+import vercel from "@/public/Vercel.svg"
+import netlify from "@/public/netlify.svg"
+import wordpress from "@/public/wordpress.svg"
+import elementor from "@/public/elementor.svg"
+import neon from "@/public/neon.svg"
+import pantheon from "@/public/pantheon.svg"
+
+function Experiance() {
+   const frontendItem = [
+      {
+         id: 1,
+         logo: html,
+         name: "HTML",
+      },
+      {
+         id: 2,
+         logo: css,
+         name: "CSS",
+      },
+      {
+         id: 3,
+         logo: javascript,
+         name: "JavaScript",
+      },
+      {
+         id: 4,
+         logo: react,
+         name: "ReactJs",
+      },
+      {
+         id: 5,
+         logo: nextjs,
+         name: "NextJs",
+      },
+      {
+         id: 6,
+         logo: typescript,
+         name: "Typescript",
+      },
+      {
+         id: 7,
+         logo: jquery,
+         name: "jQuery",
+      },
+      {
+         id: 8,
+         logo: bootstrap,
+         name: "Bootstrap",
+      },
+      {
+         id: 9,
+         logo: tailwind,
+         name: "Tailwind",
+      },
+      {
+         id: 10,
+         logo: sass,
+         name: "sass",
+      },
+      {
+         id: 11,
+         logo: photoshop,
+         name: "photoshop",
+      },
+
+   ];
+   const backendItem = [
+      {
+         id: 1,
+         logo: vercel,
+         name: "vercel nextjs",
+      },
+      {
+         id: 2,
+         logo: github,
+         name: "github",
+      },
+      {
+         id: 3,
+         logo: git,
+         name: "git",
+      },
+      {
+         id: 4,
+         logo: netlify,
+         name: "netlify",
+      },
+      {
+         id: 5,
+         logo: wordpress,
+         name: "wordpress",
+      },
+      {
+         id: 6,
+         logo: elementor,
+         name: "elementor (WP)",
+      },
+      {
+         id: 7,
+         logo: neon,
+         name: "Neon vercel postgres DB",
+      },
+      {
+         id: 8,
+         logo: pantheon,
+         name: "pantheon WP host server",
+      },
+   ];
+   return (
+      <div
+         id="Experiance"
+         className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+      >
+         <div>
+            <h2 className="text-3xl font-bold mb-5"> Skills & Technologies Experiance</h2>
+            <div className=" flex flex-wrap justify-between gap-6">
+               <div className="techitem w-full md:w-[calc(50%-15px)]">
+                  <h3 className="text-green-600 font-semibold text-xl mb-2">Frontend</h3>
+                  <div className="grid auto-fill-[90px] gap-2 my-3">
+                     {frontendItem?.map(({ id, logo, name }) => (
+                        <div key={id} >
+                           <figure className=" flex flex-col items-center justify-center border-[2px] rounded-md md:size-24 shadow-md p-1 cursor-auto hover:scale-110 duration-300 mb-1"><Image src={logo} className="w-[60px]" alt={`${name} skill`} title={name} /></figure>
+                           <div>
+                              <div className="text-center capitalize">{name}</div>
+                           </div>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+               <div className="techitem w-full md:w-[calc(50%-15px)]">
+                  <h3 className="text-green-600 font-semibold text-xl mb-2">Backend</h3>
+                  <div className="grid auto-fill-[90px] gap-2 my-3">
+                     {backendItem?.map(({ id, logo, name }) => (
+                        <div key={id} >
+                           <figure className=" flex flex-col items-center justify-center border-[2px] rounded-md md:size-24 shadow-md p-1 cursor-auto hover:scale-110 duration-300 mb-1"><Image src={logo} className="w-[60px]" alt="" /></figure>
+                           <div>
+                              <div className="text-center capitalize">{name}</div>
+                           </div>
+                        </div>
+                     ))}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   );
+}
+
+export default Experiance;
