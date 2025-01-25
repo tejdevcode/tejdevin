@@ -58,7 +58,7 @@ const Banner = () => {
                      <ul className="flex space-x-5 justify-center">
                         <li>
                            <a href="https://github.com/tejdevcode/" target="_blank">
-                              <FaGithub className="text-2xl cursor-pointer" />
+                              <FaGithub className="text-2xl cursor-pointer hover:text-black transition-all" />
                            </a>
                         </li>
                         <li>
@@ -68,7 +68,7 @@ const Banner = () => {
                         </li>
                         <li>
                            <a href="https://x.com/tejrdev" target="_blank">
-                              <FaSquareXTwitter className="text-2xl cursor-pointer" />
+                              <FaSquareXTwitter className="text-2xl cursor-pointer hover:text-black transition-all" />
                            </a>
                         </li>
 

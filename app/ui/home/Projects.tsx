@@ -104,10 +104,10 @@ const Projects = () => {
             <div className="grid gap-1 my-5 auto-fill-[250px] ">
                {cardItem.map((item) => (
                   <div
-                     className=" border bg-gray-100 duration-300 p-1 relative group overflow-hidden"
+                     className=" border bg-gray-100 dark:bg-slate-800 duration-300 p-1 relative group overflow-hidden dark:border-gray-500"
                      key={item?.id} >
 
-                     <figure className="relative w-full pb-[87%] border border-gray-300">
+                     <figure className="relative w-full pb-[87%] border border-gray-300 bg-white">
                         <Image src={item?.logo} className="w-full absolute object-cover" alt="" />
                      </figure>
 
@@ -118,7 +118,7 @@ const Projects = () => {
                         </p>*/}
                         <ul className="text-center sm:mt-7 p-2 sm:p-4">
                            {item?.tags?.map((tag, i) =>
-                              <li key={i} className="inline-block bg-slate-300 sm:bg-white rounded-full px-2 m-1 text-sm">{tag} </li>
+                              <li key={i} className="inline-block bg-slate-300 dark:bg-slate-700 sm:bg-white sm:dark:bg-slate-600 rounded-full px-2 m-1 text-sm">{tag} </li>
                            )}
                         </ul>
                      </div>
@@ -132,7 +132,7 @@ const Projects = () => {
                            href={item?.url} target="_blank">
                            SiteLink
                         </a>
-                        <a className=" text-black sm:text-white px-1 py-1 rounded mx-1 mt-2 text-xl"
+                        <a className=" text-black sm:text-white dark:text-slate-100 px-1 py-1 rounded mx-1 mt-2 text-xl"
                            href={item?.codeurl} target="_blank">
                            <FaGithubAlt />
                         </a>

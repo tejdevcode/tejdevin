@@ -6,6 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
 import Link from "next/link";
 import Image from "next/image";
+import DarkMode from "./DarkMode";
 
 const Header = () => {
    const [menu, setMenu] = useState(false);
@@ -33,7 +34,7 @@ const Header = () => {
    ];
    return (
       <>
-         <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white">
+         <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black">
             <div className="flex justify-between items-center h-16">
                <div className=" flex space-x-2">
                   <Image src={pic} className="h-12 w-12 rounded-full" alt="" />
@@ -45,7 +46,7 @@ const Header = () => {
                   </h2>
                </div>
                {/* desktop navbar */}
-               <div>
+               <div className="flex flex-wrap">
                   <ul className="hidden md:flex space-x-8">
                      {navItems.map(({ id, text }) => (
                         <li
@@ -60,6 +61,12 @@ const Header = () => {
                   <div onClick={() => setMenu(!menu)} className="md:hidden">
                      {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
                   </div>
+                  {/* <div className="hidden lg:inline-block ml-4 -mt-1">
+                     <button className="bg-green-500 px-6 py-1 rounded-md text-white hover:bg-green-600 duration-200">
+                        <Link href={'#Contact'}>Hire Me</Link>
+                     </button>
+                  </div> */}
+                  <div><DarkMode /></div>
                </div>
             </div>
             {/* mobile navbar */}

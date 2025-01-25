@@ -162,8 +162,11 @@ const About = () => {
             </h2>
             <ul className="awardsitem grid gap-1 md:auto-fill-[200px] auto-fill-[160px]">
                {Achievements?.map((item, i) =>
-                  <li className="border border-gray-400 relative group" key={i}>
-                     <a href={item?.url} target="_blank" title={item?.description}><Image src={item?.image} alt={item?.description} /><FiExternalLink className="absolute right-[2px] bottom-[2px] bg-white md:opacity-0 group-hover:opacity-100 transition-all" /></a>
+                  <li className="border border-gray-400 relative group bg-white" key={i}>
+                     <a href={item?.url} target="_blank" title={item?.description}>
+                        <Image src={item?.image} alt={item?.description} />
+                        <FiExternalLink className="absolute right-[2px] bottom-[2px] bg-white dark:bg-black rounded md:opacity-0 group-hover:opacity-100 transition-all" />
+                     </a>
                   </li>
                )}
             </ul>

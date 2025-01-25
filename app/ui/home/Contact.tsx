@@ -79,11 +79,11 @@ function Contact() {
                         onSubmit={handleSubmit(onSubmit)}
                         // action="https://getform.io/f/raeqjora"
                         // method="POST"
-                        className="bg-slate-200 px-4 py-3 sm:px-8 sm:py-6 rounded-xl w-full"
+                        className="bg-slate-200 dark:bg-slate-600 px-4 py-3 sm:px-8 sm:py-6 rounded-xl w-full"
                      >
                         <h1 className="text-xl font-semibold mb-4">Get in Touch</h1>
                         <div className="flex flex-col mb-4">
-                           <label className="block text-gray-700">FullName</label>
+                           <label className="block text-gray-700 dark:text-gray-200">FullName</label>
                            <input
                               {...register("name", { required: true })}
                               className="shadow rounded-lg appearance-none border  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -95,7 +95,7 @@ function Contact() {
                            {errors.name && <span className="text-red-600">This field is required</span>}
                         </div>
                         <div className="flex flex-col mb-4">
-                           <label className="block text-gray-700">Email Address</label>
+                           <label className="block text-gray-700 dark:text-gray-200">Email Address</label>
                            <input
                               {...register("email", { required: true })}
                               className="shadow rounded-lg appearance-none border  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -107,7 +107,7 @@ function Contact() {
                            {errors.email && <span className="text-red-600">This field is required</span>}
                         </div>
                         <div className="flex flex-col mb-4">
-                           <label className="block text-gray-700">Message</label>
+                           <label className="block text-gray-700 dark:text-gray-200">Message</label>
                            <textarea
                               {...register("message", { required: true })}
                               className="shadow rounded-lg appearance-none border  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
