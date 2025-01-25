@@ -1,6 +1,6 @@
 
 "use client"
-import pic from "../../../public/WebsiteDevelopment.png";
+import pic from "../../../public/websitedevelopment.png";
 
 import { FaLinkedin, FaGithub, FaCss3Alt, FaJsSquare, FaReact } from "react-icons/fa";
 import { FaSquareXTwitter, FaHtml5 } from "react-icons/fa6";
