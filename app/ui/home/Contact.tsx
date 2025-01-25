@@ -3,7 +3,8 @@ import axios from "axios";
 import { useForm, SubmitHandler } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 import { FaEnvelope } from "react-icons/fa";
-
+import Loaderatom from "@/app/ui/loder/Loaderatom"
+import { Suspense } from "react"
 
 type formData = {
    name: string;
@@ -18,7 +19,7 @@ function Contact() {
       handleSubmit,
       watch,
       reset,
-      formState: { errors },
+      formState: { errors, isSubmitting },
    } = useForm({
       defaultValues: {
          name: "",
@@ -42,6 +43,9 @@ function Contact() {
          }
 
          await axios.post(url, userInfo);
+         /* setTimeout(() => {
+            console.log("Form submitted successfully:", userInfo);
+         }, 5000); */
 
          toast.success("Your message has been sent");
          reset({
@@ -58,8 +62,9 @@ function Contact() {
       <>
          <div
             id="Contact"
-            className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16"
+            className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16 "
          >
+
             <h2 className="text-3xl font-bold mb-4">Contact me</h2>
             <div className="flex flex-wrap gap-4">
                <div className="contactitem w-full sm:w-[320px]">
@@ -73,14 +78,19 @@ function Contact() {
                      </ul>
                   </div>
                </div>
-               <div className="contactitem w-full sm:w-[calc(100%-400px)]">
+               <div className="contactitem w-full sm:w-[calc(100%-340px)]">
                   <div className=" flex flex-col">
                      <form
                         onSubmit={handleSubmit(onSubmit)}
                         // action="https://getform.io/f/raeqjora"
                         // method="POST"
-                        className="bg-slate-200 dark:bg-slate-600 px-4 py-3 sm:px-8 sm:py-6 rounded-xl w-full"
+                        className="bg-slate-200 dark:bg-slate-600 px-4 py-3 sm:px-8 sm:py-6 rounded-xl w-full relative"
                      >
+                        {isSubmitting && (
+                           <div className="absolute inset-0 bg-slate-950/80 dark:bg-slate-950/80 flex items-center justify-center z-10 rounded-xl">
+                              <Loaderatom />
+                           </div>
+                        )}
                         <h1 className="text-xl font-semibold mb-4">Get in Touch</h1>
                         <div className="flex flex-col mb-4">
                            <label className="block text-gray-700 dark:text-gray-200">FullName</label>

@@ -113,7 +113,7 @@ const About = () => {
             <h2 className="text-green-600 font-semibold text-xl mb-2">
                Professional Experience
             </h2>
-            <ul className="space-y-4 list-disc">
+            <ul className="space-y-4 list-disc pl-3 sm:pl-0">
                <li>
                   <h3 className="italic">SR.HTML Developer (currently working in reactjs and nextjs) :- Oct 2017 – Present </h3>
                   <p className="mb-1 ">⚡ <a href="https://www.uplers.com/" className="underline hover:no-underline">Uplers Solutions Pvt. Ltd.(mavlers)
@@ -138,8 +138,8 @@ const About = () => {
             <div className="awardsitem grid gap-3 auto-fill-[200px]">
                {awards?.map((item, i) =>
                   <figure className="" key={i}>
-                     <a href={`${item.image.src}`} className="glightbox3 border border-gray-200 rounded shadow-sm inline-block " data-gallery="gallery1" target="_blank" title={item?.description}>
-                        <Image src={item.image} alt="Focus On Growth Award" width={300} height={200} />
+                     <a href={`${item.image.src}`} className="glightbox3 border border-gray-200 rounded shadow-sm inline-block  " data-gallery="gallery1" target="_blank" title={item?.description}>
+                        <Image src={item.image} alt="Focus On Growth Award" width={300} height={200} className="w-full sm:w-auto" />
                      </a>
 
                      <figcaption className="text-sm capitalize mb-2">
