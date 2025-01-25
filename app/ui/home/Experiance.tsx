@@ -1,6 +1,6 @@
 import Image from "next/image"
 import html from "@/public/html5.svg";
-import css from "@/public/CSS3_logo.svg";
+import css from "@/public/css3_logo.svg";
 import javascript from "@/public/javascript.svg";
 import react from "@/public/react-icon.svg";
 import nextjs from "@/public/nextjs.svg";

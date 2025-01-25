@@ -1,12 +1,12 @@
 import Image from "next/image"
 import teahouse from "@/public/projects/mini/teahousethumb.jpg";
-import react_gardner from "@/public/projects/mini/reactGardner.jpg";
-import tailwind from "@/public/projects/mini/tailwindBurger.jpg";
+import react_gardner from "@/public/projects/mini/reactgardner.jpg";
+import tailwind from "@/public/projects/mini/tailwindburger.jpg";
 import wpacfpro from "@/public/projects/mini/acfwpthumb.jpg";
-import nextdeshboard from "@/public/projects/mini/deshboardNextjsthumb.jpg";
-import sass from "@/public/projects/mini/sassBluetiqthumb.jpg";
-import bootstrap from "@/public/projects/mini/BootstrapVibethumb.jpg";
-import html from "@/public/projects/mini/careHTMLthumb.jpg";
+import nextdeshboard from "@/public/projects/mini/deshboardnextjsthumb.jpg";
+import sass from "@/public/projects/mini/sassbluetiqthumb.jpg";
+import bootstrap from "@/public/projects/mini/bootstrapvibethumb.jpg";
+import html from "@/public/projects/mini/carehtmlthumb.jpg";
 import { FaGithubAlt } from "react-icons/fa";
 
 
