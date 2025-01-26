@@ -113,20 +113,20 @@ const About = () => {
             <h2 className="text-green-600 font-semibold text-xl mb-2">
                Professional Experience
             </h2>
-            <ul className="space-y-4 list-disc pl-3 sm:pl-0">
+            <ul className="space-y-4 list-disc pl-3 sm:pl-4">
                <li>
-                  <h3 className="italic">SR.HTML Developer (currently working in reactjs and nextjs) :- Oct 2017 – Present </h3>
+                  <h3 className="italic font-semibold ">SR.HTML Developer (currently working with Reactjs and Nextjs) :- Oct 2017 – Present </h3>
                   <p className="mb-1 ">⚡ <a href="https://www.uplers.com/" className="underline hover:no-underline">Uplers Solutions Pvt. Ltd.(mavlers)
                      <FiExternalLink className="inline-block ml-2" /></a> </p>
                   <p>Since October 2017, I have gained extensive experience and expertise in a wide range of front-end technologies, including SASS, Foundation, WordPress Frontend, JavaScript, jQuery, TypeScript, React, Next.js, Git, GitHub, Figma, and TailwindCSS. Throughout my journey, I have developed a strong proficiency in building responsive, user-centric web applications while leveraging these tools to create clean, efficient, and scalable code.</p>
                </li>
                <li>
-                  <h3 className="italic">Web Designer :- May 2015 – Sep 2017 </h3>
+                  <h3 className="italic font-semibold">Web Designer :- May 2015 – Sep 2017 </h3>
                   <p className="mb-1 ">⚡ <a href="https://lujayninfoways.com/" className="underline hover:no-underline">Lujayn Infoways <FiExternalLink className="inline-block ml-2" />
                   </a></p>
                   <p>I have developed expertise in HTML, CSS, JavaScript, jQuery, Bootstrap, WordPress with Visual Composer, SASS, and Photoshop. My experience includes creating visually appealing, responsive websites while leveraging these tools to deliver seamless user experiences and efficient front-end solutions.</p>
                </li>
-               <li><h3 className="italic">App Designer/ Web Designer :- January 2015 – May 2015 </h3>
+               <li><h3 className="italic font-semibold">App Designer/ Web Designer :- January 2015 – May 2015 </h3>
                   <p className="mb-1">⚡ <span className="underline">Little Play Studio (MSME) </span></p>
                   <p>I have gained expertise in HTML, CSS, Photoshop, and various aspects of web and app design, including logo creation. My experience includes crafting visually engaging websites and designing intuitive user interfaces, with a focus on delivering creative and functional design solutions.</p></li>
             </ul>
