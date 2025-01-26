@@ -34,7 +34,7 @@ const Header = () => {
    ];
    return (
       <>
-         <div className="max-w-screen-2xl container mx-auto sm:px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black">
+         <div className="max-w-screen-2xl container mx-auto sm:px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black backdrop-blur-lg backdrop-saturate-150 bg-opacity-50 dark:bg-opacity-50">
             <div className="flex justify-between items-center h-16 px-4 sm:px-0">
                <div className=" flex space-x-2">
                   <Image src={pic} className="h-12 w-12 rounded-full" alt="" />
