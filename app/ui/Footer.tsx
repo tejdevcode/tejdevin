@@ -9,6 +9,7 @@ import {
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import ScrollToTop from "./ScrollToTop";
 function Footer() {
    const currentYear = new Date().getFullYear();
 
@@ -45,6 +46,7 @@ function Footer() {
                      </p>
                   </div>
                </div>
+               <ScrollToTop />
             </div>
          </footer>
       </>

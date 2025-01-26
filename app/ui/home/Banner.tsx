@@ -50,7 +50,12 @@ const Banner = () => {
 
 
                </ul>
-               <br />
+               <div>
+                  <div className="bnrcta space-x-2 text-white mt-4 mb-3 sm:mb-7">
+                     <a href="#Contact" className="px-3 py-1 bg-green-700 rounded-md hover:bg-black transition-all">Get in touch</a>
+                     <a href="#Projects" className="px-3 py-1 bg-green-700 rounded-md hover:bg-black transition-all">See my work</a>
+                  </div>
+               </div>
                {/* social media icons */}
                <div className="lg:flex flex-col items-center md:flex-row justify-between space-y-6 lg:space-y-0">
                   <div className="space-y-2">
