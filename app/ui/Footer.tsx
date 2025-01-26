@@ -1,9 +1,10 @@
-import React from "react";
+
 import {
    FaFacebook,
    FaTwitter,
    FaInstagram,
    FaLinkedinIn,
+   FaEnvelopeCircleCheck
 } from "react-icons/fa6";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -30,6 +31,11 @@ function Footer() {
                      <li>
                         <a href="https://x.com/tejrdev" target="_blank">
                            <FaSquareXTwitter className="text-2xl cursor-pointer" />
+                        </a>
+                     </li>
+                     <li>
+                        <a href="mailto:tejrdevcode@gmail.com" >
+                           <FaEnvelopeCircleCheck className="text-2xl cursor-pointer" />
                         </a>
                      </li>
                   </ul>

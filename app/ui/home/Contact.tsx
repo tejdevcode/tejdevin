@@ -4,7 +4,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 import { FaEnvelope } from "react-icons/fa";
 import Loaderatom from "@/app/ui/loder/Loaderatom"
-import { Suspense } from "react"
 
 type formData = {
    name: string;
@@ -127,6 +126,7 @@ function Contact() {
                            />
                            {errors.message && <span className="text-red-600">This field is required</span>}
                         </div>
+                        <input type="hidden" name="_captcha" value="true" />
                         <button
                            type="submit"
                            className="bg-black text-white rounded-xl px-3 py-2 hover:bg-slate-700 duration-300"
