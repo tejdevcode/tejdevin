@@ -20,22 +20,22 @@ function Footer() {
                <div className=" flex flex-col items-center justify-center">
                   <ul className="flex space-x-5">
                      <li>
-                        <a href="https://github.com/tejdevcode/" target="_blank">
+                        <a href="https://github.com/tejdevcode/" target="_blank" title="github">
                            <FaGithub className="text-2xl cursor-pointer" />
                         </a>
                      </li>
                      <li>
-                        <a href="https://linkedin.com/in/tej-radadiya" target="_blank">
+                        <a href="https://linkedin.com/in/tej-radadiya" target="_blank" title="linked in">
                            <FaLinkedin className="text-2xl cursor-pointer" />
                         </a>
                      </li>
                      <li>
-                        <a href="https://x.com/tejrdev" target="_blank">
+                        <a href="https://x.com/tejrdev" target="_blank" title="twitter X">
                            <FaSquareXTwitter className="text-2xl cursor-pointer" />
                         </a>
                      </li>
                      <li>
-                        <a href="mailto:tejrdevcode@gmail.com" >
+                        <a href="mailto:tejrdevcode@gmail.com" title="mail">
                            <FaEnvelopeCircleCheck className="text-2xl cursor-pointer" />
                         </a>
                      </li>

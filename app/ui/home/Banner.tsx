@@ -62,17 +62,17 @@ const Banner = () => {
                      <h1 className="font-bold text-center ">Available on</h1>
                      <ul className="flex space-x-5 justify-center">
                         <li>
-                           <a href="https://github.com/tejdevcode/" target="_blank">
+                           <a href="https://github.com/tejdevcode/" target="_blank" aria-label="Github">
                               <FaGithub className="text-2xl cursor-pointer hover:text-black transition-all" />
                            </a>
                         </li>
                         <li>
-                           <a href="https://linkedin.com/in/tej-radadiya" target="_blank">
+                           <a href="https://linkedin.com/in/tej-radadiya" target="_blank" aria-label="Linked in">
                               <FaLinkedin className="text-2xl cursor-pointer hover:text-cyan-600 transition-all" />
                            </a>
                         </li>
                         <li>
-                           <a href="https://x.com/tejrdev" target="_blank">
+                           <a href="https://x.com/tejrdev" target="_blank" aria-label="Twitter/X">
                               <FaSquareXTwitter className="text-2xl cursor-pointer hover:text-black transition-all" />
                            </a>
                         </li>
@@ -111,7 +111,7 @@ const Banner = () => {
                </div>
             </div>
             <div className="md:w-[45%] md:ml-10 md:mt-8 mt-8 order-1 mx-auto">
-               <Image src={pic.src} className="" alt="" width={500} height={340} />
+               <Image src={pic.src} className="" alt="" width={500} height={360} />
             </div>
          </div>
       </div >

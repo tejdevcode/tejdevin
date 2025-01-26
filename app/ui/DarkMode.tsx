@@ -14,7 +14,7 @@ const DarkMode = () => {
       }
    }, [darkmode]);
    return (
-      <button onClick={() => setDarkmode(!darkmode)} className='text-2xl ml-3 inline-block'>
+      <button onClick={() => setDarkmode(!darkmode)} className='text-2xl ml-3 inline-block' aria-label="color mode change button">
          {darkmode ? <RiMoonClearFill /> : <MdOutlineLightMode />}
       </button>
    )

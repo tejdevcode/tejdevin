@@ -173,7 +173,7 @@ function Experiance() {
                         <div key={item?.id} >
                            <figure className={`flex flex-col items-center justify-center border-[2px] rounded-md size-24 shadow-md p-1 cursor-auto hover:scale-110 duration-300 mb-1 dark:bg-slate-700 dark:border-gray-400 w-full ${item?.url ? 'cursor-pointer' : ''}`}>
                               <a href={item?.url} target="_blank">
-                                 <Image src={item?.logo} className="w-[60px]" alt="" />
+                                 <Image src={item?.logo} className="w-[60px]" alt={`${item?.name} skill`} title={item?.name} />
                               </a>
                            </figure>
                            <div>
