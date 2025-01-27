@@ -91,9 +91,9 @@ const Projects = () => {
          id: 7,
          logo: bootstrap,
          name: "bootstrap",
-         url: "https://tejdevcode.github.io/Blutiquegit/",
-         github: "https://github.com/tejdevcode/Blutiquegit",
-         codeurl: "https://github1s.com/tejdevcode/Blutiquegit",
+         url: "https://tejdevcode.github.io/bootstrapvibe/",
+         github: "https://github.com/tejdevcode/bootstrapvibe",
+         codeurl: "https://github1s.com/tejdevcode/bootstrapvibe",
          tags: ['Bootstrap', 'SASS/SCSS', 'HTML', 'Jquery', 'GitHub', 'GitHubPages'],
          tachstack: [<FaBootstrap />, <FaSass />, <FaHtml5 />, <FaCss3Alt />, <SiJquery />, <FaGithub />]
       },
