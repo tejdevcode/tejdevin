@@ -160,7 +160,7 @@ function Experiance() {
                               }
                            </figure>
                            <div>
-                              <div className="text-center capitaliz">{item?.name}</div>
+                              <h4 className="text-center capitaliz">{item?.name}</h4>
                            </div>
                         </div>
                      ))}

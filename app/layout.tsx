@@ -23,8 +23,8 @@ const PlayfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Tej R's Insights: Passionate Web Developer | Learning, Building, Growing",
-  description: "Explore the portfolio of Tej R, a passionate web developer dedicated to learning, building, and growing in the field of web development, erontend development. Discover projects, skills, and insights.",
+  title: "Tej R's Insights: Web Developer | Learn, Build, Grow",
+  description: "Explore the portfolio of Tej R, a passionate web developer dedicated to learning, building, and growing in the field of web development, frontend development. Discover projects, skills, and insights.",
 };
 
 export default function RootLayout({
