@@ -139,7 +139,7 @@ const About = () => {
                {awards?.map((item, i) =>
                   <figure className="" key={i}>
                      <a href={`${item.image.src}`} className="glightbox3 border border-gray-200 rounded shadow-sm inline-block  " data-gallery="gallery1" target="_blank" title={item?.description}>
-                        <Image src={item.image} alt="Focus On Growth Award" width={300} height={200} className="w-full sm:w-auto" />
+                        <Image src={item.image} alt={item?.description ?? "Focus On Growth Award"} width={300} height={200} className="w-full sm:w-auto" />
                      </a>
 
                      <figcaption className="text-sm capitalize mb-2">

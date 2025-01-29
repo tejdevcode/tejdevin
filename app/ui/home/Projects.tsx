@@ -30,7 +30,7 @@ const Projects = () => {
       {
          id: 1,
          logo: teahouse,
-         name: "Teahouse",
+         name: "Teahouse Next js Project",
          url: "https://nextjstea.vercel.app/",
          github: "https://github.com/tejdevcode/nextjstea",
          codeurl: "https://github1s.com/tejdevcode/nextjstea",
@@ -40,7 +40,7 @@ const Projects = () => {
       {
          id: 2,
          logo: react_gardner,
-         name: "ReactGarden",
+         name: "ReactGarden React js project",
          url: "https://reactwptype.netlify.app/",
          github: "https://github.com/tejdevcode/reactwptype",
          codeurl: "https://github1s.com/tejdevcode/reactwptype",
@@ -50,7 +50,7 @@ const Projects = () => {
       {
          id: 3,
          logo: tailwind,
-         name: "tailwindBurger",
+         name: "tailwindBurger tailwindcss project",
          url: "https://tejdevcode.github.io/tailwindspotlight/",
          github: "https://github.com/tejdevcode/tailwindspotlight",
          codeurl: "https://github1s.com/tejdevcode/tailwindspotlight",
@@ -60,7 +60,7 @@ const Projects = () => {
       {
          id: 4,
          logo: wpacfpro,
-         name: "wpacfpro",
+         name: "wpacfpro wordpress acf project",
          url: "https://dev-wpacfpro.pantheonsite.io/",
          github: "https://github.com/tejdevcode/tezacfpwp",
          codeurl: "https://github1s.com/tejdevcode/tezacfpwp",
@@ -70,7 +70,7 @@ const Projects = () => {
       {
          id: 5,
          logo: nextdeshboard,
-         name: "nextDeshboard",
+         name: "nextDeshboard nextjs15 project",
          url: "https://nextjsdashapp.vercel.app/",
          github: "https://github.com/tejdevcode/nextjsdashboard",
          codeurl: "https://github1s.com/tejdevcode/nextjsdashboard",
@@ -80,7 +80,7 @@ const Projects = () => {
       {
          id: 6,
          logo: sass,
-         name: "sass",
+         name: "sass scss project",
          url: "https://tejdevcode.github.io/Blutiquegit/",
          github: "https://github.com/tejdevcode/Blutiquegit",
          codeurl: "https://github1s.com/tejdevcode/Blutiquegit",
@@ -90,7 +90,7 @@ const Projects = () => {
       {
          id: 7,
          logo: bootstrap,
-         name: "bootstrap",
+         name: "bootstrap project",
          url: "https://tejdevcode.github.io/bootstrapvibe/",
          github: "https://github.com/tejdevcode/bootstrapvibe",
          codeurl: "https://github1s.com/tejdevcode/bootstrapvibe",
@@ -100,7 +100,7 @@ const Projects = () => {
       {
          id: 8,
          logo: html,
-         name: "html",
+         name: "html project",
          url: "https://tejdevcode.github.io/htmlproject/",
          github: "https://github.com/tejdevcode/htmlproject",
          codeurl: "https://github1s.com/tejdevcode/htmlproject",
@@ -121,7 +121,7 @@ const Projects = () => {
                      key={item?.id} >
 
                      <figure className="relative w-full pb-[87%] border border-gray-300 bg-white">
-                        <Image src={item?.logo} className="w-full absolute object-cover" alt="" />
+                        <Image src={item?.logo} className="w-full absolute object-cover" alt={item?.name ?? 'Projects'} />
                         <div className="techicon absolute bottom-1 sm:bottom-0 flex w-full justify-center">
                            {item?.tachstack?.map((tech, i) =>
                               <span key={i} className="text-lg bg-gray-100/80 text-black rounded-sm p-1 mr-[1px]">{tech}</span>

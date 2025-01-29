@@ -59,7 +59,7 @@ const Banner = () => {
                {/* social media icons */}
                <div className="lg:flex flex-col items-center md:flex-row justify-between space-y-6 lg:space-y-0">
                   <div className="space-y-2">
-                     <h1 className="font-bold text-center ">Available on</h1>
+                     <h2 className="font-bold text-center ">Available on</h2>
                      <ul className="flex space-x-5 justify-center">
                         <li>
                            <a href="https://github.com/tejdevcode/" target="_blank" aria-label="Github">
@@ -86,7 +86,7 @@ const Banner = () => {
                      </ul>
                   </div>
                   <div className=" space-y-2">
-                     <h1 className="font-bold text-center">Currently working on</h1>
+                     <h2 className="font-bold text-center">Currently working on</h2>
                      <div className="flex space-x-5 justify-center">
                         <a href="https://react.dev/" target="_blank">
                            <FaReact className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-cyan-600 transition-all" title="ReactJs" />
@@ -111,7 +111,7 @@ const Banner = () => {
                </div>
             </div>
             <div className="md:w-[45%] md:ml-10 md:mt-8 mt-8 order-1 mx-auto">
-               <Image src={pic.src} className="" alt="" width={500} height={360} />
+               <Image src={pic.src} className="" alt="Web Development" width={500} height={360} />
             </div>
          </div>
       </div >
