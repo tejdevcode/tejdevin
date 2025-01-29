@@ -37,7 +37,7 @@ const Banner = () => {
                         backSpeed={50}
                         loop={true}
                      />
-                     Developer
+                     Developer 👩‍💻
                   </h1>
                </div>
                <br />
