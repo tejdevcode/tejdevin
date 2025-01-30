@@ -10,6 +10,11 @@ import {
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import ScrollToTop from "./ScrollToTop";
+
+import Footeremail from "@/app/ui/home/FooterEmail"
+
+
+
 function Footer() {
    const currentYear = new Date().getFullYear();
 
@@ -35,9 +40,11 @@ function Footer() {
                         </a>
                      </li>
                      <li>
-                        <a href="mailto:tejrdevcode@gmail.com" title="mail">
-                           <FaEnvelopeCircleCheck className="text-2xl cursor-pointer" />
-                        </a>
+                        {/* <a href="mailto:tejrdevcode@gmail.com" title="mail">
+
+                        </a> */}
+                        <Footeremail />
+
                      </li>
                   </ul>
                   <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">

@@ -4,12 +4,20 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
 import { FaEnvelope } from "react-icons/fa";
 import Loaderatom from "@/app/ui/loder/Loaderatom"
+/* import dynamic from 'next/dynamic'; */
+import EmailComponent from "./EmailComponent";
 
 type formData = {
    name: string;
    email: string;
    message: string;
 }
+/* const EmailComponent = dynamic(() => import('./EmailComponent'), {
+   ssr: false,
+   loading: () => <span>Loading...</span>
+}); */
+
+
 
 function Contact() {
    /* console.log(process.env.NEXT_PUBLIC_FORM_SUBMIT_URL) */
@@ -57,6 +65,11 @@ function Contact() {
          toast.error("Something went wrong");
       }
    };
+
+   /* const name = "tejrdevcode";
+   const domain = "gmail";
+   const tld = "com";
+   const email = name + "@" + domain + "." + tld; */
    return (
       <>
          <div
@@ -72,7 +85,7 @@ function Contact() {
                      <span>Feel free to reach out with any inquiries.</span>
                      <ul className="mt-4">
                         <li><FaEnvelope className="inline-block mr-2" />
-                           <a href="mailto:tejrdevcode@gmail.com">tejrdevcode@gmail.com</a>
+                           <EmailComponent />
                         </li>
                      </ul>
                   </div>
