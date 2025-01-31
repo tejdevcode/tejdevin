@@ -32,7 +32,7 @@ const Banner = () => {
                      {/* <span >Developer</span> */} <br className="sm:hidden" />
                      <ReactTyped
                         className="text-green-700 font-bold"
-                        strings={["Web ", "FrontEnd ", "ReactJs ", "NextJs ", "HTML "]}
+                        strings={["Web ", "FrontEnd ", "ReactJs ", "NextJs ", "HTML", "UI"]}
                         typeSpeed={40}
                         backSpeed={50}
                         loop={true}
