@@ -145,11 +145,11 @@ const Projects = () => {
                      </div>
 
                      <div className=" px-2 sm:py-4 flex justify-center sm:absolute sm:-bottom-36 sm:left-0 group-hover:bottom-0 transition-all duration-300 z-10 mx-auto w-full">
-                        <a className="bg-blue-500 hover:bg-blue-700 text-white px-3 py-1 rounded m-1 leading-tight text-center"
+                        <a className="bg-blue-500 hover:bg-blue-700 text-white px-2 py-1 rounded m-1 leading-tight text-center"
                            href={item?.github}>
                            Source code
                         </a>
-                        <a className="bg-green-500 hover:bg-green-700 text-white px-3 py-1 rounded m-1 "
+                        <a className="bg-green-500 hover:bg-green-700 text-white px-2 py-1 rounded m-1 "
                            href={item?.url} target="_blank">
                            SiteDemo
                         </a>
