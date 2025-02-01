@@ -28,7 +28,7 @@ const Banner = () => {
             <div className="md:w-[55%] mt-12 md:mt-18 space-y-2 order-2 md:order-1 ">
                <span className="text-xl">Welcome In My Feed</span>
                <div className="flex space-x-1 text-2xl md:text-4xl">
-                  <h1>Hi👋, I'm a&nbsp;
+                  <h1>Hi <span className="wave">👋</span>, I'm a&nbsp;
                      {/* <span >Developer</span> */} <br className="sm:hidden" />
                      <ReactTyped
                         className="text-green-700 font-bold"
