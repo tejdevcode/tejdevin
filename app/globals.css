@@ -30,6 +30,7 @@ body {
   background: var(--bg-light);
   color: var(--text-light);
   font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  @apply md:text-base 2xl:text-lg md:leading-normal
 }
 
 body.dark {

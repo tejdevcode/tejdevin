@@ -41,7 +41,7 @@ const Banner = () => {
                   </h1>
                </div>
                <br />
-               <ul className="text-base md:text-md md:text-justify space-y-2 ">
+               <ul className="text-base md:text-md 2xl:text-lg md:text-justify space-y-2 ">
                   <li>⚡ Front-end dev with extensive experience working across a diverse tech stack.</li>
                   <li>⚡ I specialize in building dynamic and responsive web applications using HTML, CSS, JS, Jquery, TS, SASS.</li>
                   <li>⚡ I have a strong foundation in web design with expertise in popular frameworks like React, NextJS, Bootstrap, TailwindCSS, and FoundationCSS.</li>
