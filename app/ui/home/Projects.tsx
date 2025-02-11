@@ -138,7 +138,7 @@ const Projects = () => {
                            {item?.tags?.map((tag, i) =>
                               <li key={i} className="inline-block bg-slate-300 dark:bg-slate-700 sm:bg-white sm:dark:bg-slate-600 rounded-full px-2 m-1 text-sm">
                                  {tag === 'AppRouter' || tag === 'WPGraphQL' || tag === 'WPACF' || tag === 'GitHubPages'
-                                    ? tag : <a href="#Experiance">{tag} </a>}
+                                    ? tag : <a href="#Experience">{tag} </a>}
                               </li>
                            )}
                         </ul>
