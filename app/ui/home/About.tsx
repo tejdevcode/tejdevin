@@ -1,4 +1,5 @@
 import Image from "next/image"
+import TakeCharge from "../../../public/awards/TakeCharge-APR25.jpg"
 import FocusOnGrowth from "../../../public/awards/focusongrotwh-sep24.jpg"
 import FocusOnCustomer from "../../../public/awards/focusoncustomer-jun23.jpg"
 import CareToHelp from "../../../public/awards/caretohelp-sep-22.png"
@@ -20,6 +21,10 @@ import { FiExternalLink } from "react-icons/fi";
 const About = () => {
 
    const awards = [
+      {
+         "image": TakeCharge,
+         "description": " Take Charge - 2025"
+      },
       {
          "image": FocusOnGrowth,
          "description": " Focus on growth - 2024"
