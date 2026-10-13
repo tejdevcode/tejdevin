@@ -5,7 +5,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 import { RiMoonClearFill } from "react-icons/ri";
 
 const DarkMode = () => {
-   const [darkmode, setDarkmode] = useState(false);
+   const [darkmode, setDarkmode] = useState(true);
    useEffect(() => {
       if (darkmode) {
          document.body.classList.add("dark");

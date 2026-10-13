@@ -70,7 +70,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body  >
+      <body  className="dark">
         {/* ${geistSans.variable} ${geistMono.variable} */}
         {children}
       </body>
