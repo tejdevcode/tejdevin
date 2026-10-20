@@ -149,7 +149,7 @@ const Projects = () => {
                            href={item?.github}>
                            Source code
                         </a>
-                        <a className="bg-green-500 hover:bg-green-700 text-white px-2 py-1 rounded m-1 "
+                        <a className="bg-green-500 hover:bg-green-700 text-white px-2 py-1 rounded m-1 flex items-center"
                            href={item?.url} target="_blank">
                            SiteDemo
                         </a>

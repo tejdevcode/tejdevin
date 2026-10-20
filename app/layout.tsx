@@ -3,6 +3,8 @@ import { Geist, Geist_Mono, Varela_Round, Playfair_Display } from "next/font/goo
 import "./globals.css";
 import portfoliothimb from "../public/portfolio-thumbnail.jpg";
 import Script from 'next/script'
+import { StructuredData } from "./ui/StructuredData"
+import { FAQSchema } from "./ui/FAQSchema"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +27,7 @@ const PlayfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tejdevin.vercel.app'),
   title: "Tej R's Insights: Web Developer | Learn, Build, Grow",
   description: "Explore the portfolio of Tej R, a passionate web developer dedicated to learning, building, and growing in the field of web development, frontend development. Discover projects, skills, and insights.",
   openGraph: {
@@ -41,7 +44,15 @@ export const metadata: Metadata = {
         alt: "Tej R Portfolio Thumbnail",
       },
     ]
-  }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Tej R's Insights: Web Developer | Learn, Build, Grow",
+    description: "Explore the portfolio of Tej R, a passionate web developer dedicated to learning, building, and growing in the field of web development, frontend development. Discover projects, skills, and insights.",
+    images: ['/portfolio-thumbnail.jpg'],
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: 'https://tejdevin.vercel.app/' },
 };
 
 export default function RootLayout({
@@ -69,6 +80,8 @@ export default function RootLayout({
       `,
           }}
         />
+        <StructuredData />
+        <FAQSchema />
       </head>
       <body  className="dark">
         {/* ${geistSans.variable} ${geistMono.variable} */}
