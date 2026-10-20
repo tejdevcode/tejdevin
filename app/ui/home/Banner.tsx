@@ -111,7 +111,7 @@ const Banner = () => {
                </div>
             </div>
             <div className="md:w-[45%] md:ml-10 md:mt-8 mt-8 order-1 mx-auto">
-               <Image src={pic.src} className="" alt="Web Development" width={500} height={360} />
+               <Image src={pic.src} className="" alt="Web Development" width={500} height={360} priority />
             </div>
          </div>
       </div >

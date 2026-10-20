@@ -122,11 +122,13 @@ const Projects = () => {
 
                      <figure className="relative w-full pb-[87%] border border-gray-300 bg-white">
                         <Image src={item?.logo} className="w-full absolute object-cover" alt={item?.name ?? 'Projects'} />
-                        <div className="techicon absolute bottom-1 sm:bottom-0 flex w-full justify-center">
-                           {item?.tachstack?.map((tech, i) =>
-                              <span key={i} className="text-lg bg-gray-100/80 text-black rounded-sm p-1 mr-[1px]">{tech}</span>
-                           )}
-                        </div>
+<div className="techicon absolute bottom-1 sm:bottom-0 flex w-full justify-center">
+                            {item?.tachstack?.map((tech, i) =>
+                               <span key={i} className="text-lg bg-gray-100/80 text-black rounded-sm p-1 mr-[1px]" aria-label={tech.type?.displayName || tech.props?.title || 'Technology icon'}>
+                                  {tech}
+                               </span>
+                            )}
+                         </div>
                      </figure>
 
                      <div className="sm:absolute sm:-top-[100%] group-hover:top-1 z-10 transition-all duration-300 w-full sm:h-full sm:bg-black sm:bg-opacity-75 left-0">

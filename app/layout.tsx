@@ -9,21 +9,25 @@ import { FAQSchema } from "./ui/FAQSchema"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const varelaRound = Varela_Round({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const PlayfairDisplay = Playfair_Display({
   weight: "400",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

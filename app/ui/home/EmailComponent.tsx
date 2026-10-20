@@ -4,7 +4,7 @@ interface Email {
 
 
 const EmailComponent = ({ email = 'tejrdevcode@gmail.com' }: Email) => {
-   return <a href="mailto:tejrdevcode&#64;gmail&#46;com" rel="nofollow">{email}</a>;
+    return <a href="mailto:tejrdevcode&#64;gmail&#46;com" rel="nofollow" aria-label="Email Tej R">{email}</a>;
 };
 
 /* const EmailComponent = () => {
