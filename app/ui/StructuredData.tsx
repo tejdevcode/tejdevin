@@ -54,7 +54,7 @@ export function StructuredData() {
           "@type": "PostalAddress",
           addressCountry: "IN",
           addressRegion: "Gujarat",
-          addressLocality: "Rajkot",
+          addressLocality: "Ahmedabad",
         },
         priceRange: "$$$",
         telephone: "+91-XXXXXXXXXX",
