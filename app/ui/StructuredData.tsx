@@ -50,6 +50,15 @@ export function StructuredData() {
         areaServed: "Worldwide",
         serviceType:
           "Frontend Development, React/Next.js Applications, UI/UX Implementation",
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "IN",
+          addressRegion: "Gujarat",
+          addressLocality: "Rajkot",
+        },
+        priceRange: "$$$",
+        telephone: "+91-XXXXXXXXXX",
+        image: "https://tejdevin.vercel.app/portfolio-thumbnail.jpg",
       },
     ],
   }
