@@ -154,6 +154,7 @@ const About = () => {
                   </figure>
                )}
 
+
                {/* {Achievements?.map((item, i) =>
                   <figure className="border border-gray-200 rounded" key={i}>
                      <a href={item?.url} target="_blank"><Image src={item.image} alt="Focus On Growth Award" width={300} height={200} /></a>

@@ -49,7 +49,7 @@ function Footer() {
                   </ul>
                   <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">
                      <p className="text-sm">
-                        &copy; {currentYear} Made with ❤️ Tej R.
+                        &copy; {currentYear} Tej R.
                      </p>
                   </div>
                </div>
