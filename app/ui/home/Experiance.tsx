@@ -151,7 +151,7 @@ function Experiance() {
                   <div className="grid auto-fill-[90px] gap-2 my-3">
                      {frontendItem?.map((item) => (
                         <div key={item?.id} >
-                           <figure className={`flex flex-col items-center justify-center border-[2px] rounded-md size-24 shadow-md p-1  hover:scale-110 duration-300 mb-1 dark:bg-slate-700 dark:border-gray-400 w-full ${item?.url ? 'cursor-pointer' : ''}`}>
+                           <figure className={`flex flex-col items-center justify-center border-[2px] rounded-md size-24 shadow-md p-1  hover:scale-110 duration-300 mb-1 dark:bg-slate-500 dark:border-gray-400 w-full ${item?.url ? 'cursor-pointer' : ''}`}>
                               {item?.url ?
                                  <a href={item?.url} target="_blank">
                                     <Image src={item?.logo} className="w-[60px]" alt={`${item?.name} skill`} title={item?.name} />
@@ -160,7 +160,7 @@ function Experiance() {
                               }
                            </figure>
                            <div>
-                              <h4 className="text-center capitaliz">{item?.name}</h4>
+                              <h4 className="text-center capitaliz mb-1 leading-snug">{item?.name}</h4>
                            </div>
                         </div>
                      ))}
@@ -171,13 +171,13 @@ function Experiance() {
                   <div className="grid auto-fill-[90px] gap-2 my-3">
                      {backendItem?.map((item) => (
                         <div key={item?.id} >
-                           <figure className={`flex flex-col items-center justify-center border-[2px] rounded-md size-24 shadow-md p-1 cursor-auto hover:scale-110 duration-300 mb-1 dark:bg-slate-700 dark:border-gray-400 w-full ${item?.url ? 'cursor-pointer' : ''}`}>
+                           <figure className={`flex flex-col items-center justify-center border-[2px] rounded-md size-24 shadow-md p-1 cursor-auto hover:scale-110 duration-300 mb-1 dark:bg-slate-500 dark:border-gray-400 w-full ${item?.url ? 'cursor-pointer' : ''}`}>
                               <a href={item?.url} target="_blank">
                                  <Image src={item?.logo} className="w-[60px]" alt={`${item?.name} skill`} title={item?.name} />
                               </a>
                            </figure>
                            <div>
-                              <div className="text-center capitalize">{item?.name}</div>
+                              <div className="mb-1 text-center capitalize leading-snug">{item?.name}</div>
                            </div>
                         </div>
                      ))}
