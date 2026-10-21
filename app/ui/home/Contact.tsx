@@ -2,10 +2,12 @@
 import axios from "axios";
 import { useForm, SubmitHandler } from "react-hook-form";
 import toast, { Toaster } from 'react-hot-toast';
-import { FaEnvelope } from "react-icons/fa";
+// import { FaEnvelope } from "react-icons/fa";
 import Loaderatom from "@/app/ui/loder/Loaderatom"
 /* import dynamic from 'next/dynamic'; */
 import EmailComponent from "./EmailComponent";
+import { FaEnvelope } from "@/app/ui/Icons";
+
 
 type formData = {
    name: string;
@@ -84,7 +86,7 @@ function Contact() {
                      <h3 className="text-green-600 font-semibold text-xl mb-2">"I'm happy to help you"</h3>
                      <span>Feel free to reach out with any inquiries.</span>
                      <ul className="mt-4">
-                        <li><FaEnvelope className="inline-block mr-2" />
+                        <li><FaEnvelope className="inline-block mr-2" height="1em" width="1em" />
                            <EmailComponent />
                         </li>
                      </ul>

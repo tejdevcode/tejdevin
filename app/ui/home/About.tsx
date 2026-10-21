@@ -12,7 +12,8 @@ import Nodejs_certification from "../../../public/awards/nodejs_certification.jp
 import Expressjs_certification from "../../../public/awards/expressjs_certification.jpg"
 import PHP_certification from "../../../public/awards/php_certification.jpg"
 import SQL_certification from "../../../public/awards/sql_certification.jpg"
-import { FiExternalLink } from "react-icons/fi";
+// import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink } from "@/app/ui/Icons";
 
 
 

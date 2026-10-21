@@ -8,10 +8,12 @@ import sass from "@/public/projects/mini/sassbluetiqthumb.jpg";
 import bootstrap from "@/public/projects/mini/bootstrapvibethumb.jpg";
 import html from "@/public/projects/mini/carehtmlthumb.jpg";
 
-import { FaGithub, FaCss3Alt, FaJsSquare, FaReact, FaGithubAlt, FaWordpress, FaSass, FaBootstrap } from "react-icons/fa";
+/*import { FaGithub, FaCss3Alt, FaJsSquare, FaReact, FaGithubAlt, FaWordpress, FaSass, FaBootstrap } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa6";
 import { SiNextdotjs, SiVercel, SiGraphql, SiTailwindcss, SiJquery, SiNetlify, SiPhp } from "react-icons/si"
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoTypescript } from "react-icons/bi";*/
+
+import { SiNextdotjs, SiVercel, SiGraphql, SiTailwindcss, SiJquery, SiNetlify, SiPhp, FaGithub, FaCss3Alt, FaReact, FaGithubAlt, FaWordpress, FaSass, FaBootstrap, FaHtml5, BiLogoTypescript } from "@/app/ui/Icons";
 
 
 interface CardItem {
@@ -35,7 +37,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/nextjstea",
          codeurl: "https://github1s.com/tejdevcode/nextjstea",
          tags: ['NextJS', 'ReactJS', 'AppRouter', 'HTML', 'CSS', 'Vercel', 'GitHub'],
-         tachstack: [<SiNextdotjs />, <FaReact />, <FaHtml5 />, <FaCss3Alt />, <SiVercel />, <FaGithub />]
+         tachstack: [<SiNextdotjs height="1em" width="1em" />, <FaReact height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiVercel height="1em" width="1em" />, <FaGithub height="1em" width="1em" />]
       },
       {
          id: 2,
@@ -45,7 +47,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/reactwptype",
          codeurl: "https://github1s.com/tejdevcode/reactwptype",
          tags: ['ReactJS', 'WordPress', 'WPGraphQL', 'WPACF', 'HTML', 'CSS', 'Netlify', 'GitHub'],
-         tachstack: [<FaReact />, <BiLogoTypescript />, <FaWordpress />, <SiGraphql />, <FaHtml5 />, <FaCss3Alt />, <SiNetlify />]
+         tachstack: [<FaReact height="1em" width="1em" />, <BiLogoTypescript height="1em" width="1em" />, <FaWordpress height="1em" width="1em" />, <SiGraphql height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiNetlify height="1em" width="1em" />]
       },
       {
          id: 3,
@@ -55,7 +57,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/tailwindspotlight",
          codeurl: "https://github1s.com/tejdevcode/tailwindspotlight",
          tags: ['TailwindCSS', 'HTML', 'CSS', 'Jquery', 'GitHub', 'GitHubPages'],
-         tachstack: [<SiTailwindcss />, <FaHtml5 />, <FaCss3Alt />, <SiJquery />, <FaGithub />]
+         tachstack: [<SiTailwindcss height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiJquery height="1em" width="1em" />, <FaGithub height="1em" width="1em" />]
       },
       {
          id: 4,
@@ -65,7 +67,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/tezacfpwp",
          codeurl: "https://github1s.com/tejdevcode/tezacfpwp",
          tags: ['WordPress', 'WPACF', 'PHP', 'HTML', 'CSS', 'Jquery', 'pantheon'],
-         tachstack: [<FaWordpress />, <SiPhp />, <FaHtml5 />, <FaCss3Alt />, <SiJquery />]
+         tachstack: [<FaWordpress height="1em" width="1em" />, <SiPhp height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiJquery height="1em" width="1em" />]
       },
       {
          id: 5,
@@ -75,7 +77,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/nextjsdashboard",
          codeurl: "https://github1s.com/tejdevcode/nextjsdashboard",
          tags: ['NextJS15', 'ReactJS', 'AppRouter', 'HTML', 'CSS', 'Vercel', ' NeonPostgres', 'GitHub'],
-         tachstack: [<SiNextdotjs />, <FaReact />, <FaHtml5 />, <FaCss3Alt />, <SiVercel />, <FaGithub />]
+         tachstack: [<SiNextdotjs height="1em" width="1em" />, <FaReact height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiVercel height="1em" width="1em" />, <FaGithub height="1em" width="1em" />]
       },
       {
          id: 6,
@@ -85,7 +87,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/Blutiquegit",
          codeurl: "https://github1s.com/tejdevcode/Blutiquegit",
          tags: ['SASS/SCSS', 'HTML', 'Jquery', 'GitHub', 'GitHubPages'],
-         tachstack: [<FaSass />, <FaHtml5 />, <FaCss3Alt />, <SiJquery />, <FaGithub />]
+         tachstack: [<FaSass height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiJquery height="1em" width="1em" />, <FaGithub height="1em" width="1em" />]
       },
       {
          id: 7,
@@ -95,7 +97,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/bootstrapvibe",
          codeurl: "https://github1s.com/tejdevcode/bootstrapvibe",
          tags: ['Bootstrap', 'SASS/SCSS', 'HTML', 'Jquery', 'GitHub', 'GitHubPages'],
-         tachstack: [<FaBootstrap />, <FaSass />, <FaHtml5 />, <FaCss3Alt />, <SiJquery />, <FaGithub />]
+         tachstack: [<FaBootstrap height="1em" width="1em" />, <FaSass height="1em" width="1em" />, <FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiJquery height="1em" width="1em" />, <FaGithub height="1em" width="1em" />]
       },
       {
          id: 8,
@@ -105,7 +107,7 @@ const Projects = () => {
          github: "https://github.com/tejdevcode/htmlproject",
          codeurl: "https://github1s.com/tejdevcode/htmlproject",
          tags: ['HTML', 'CSS', 'Jquery', 'GitHub', 'GitHubPages'],
-         tachstack: [<FaHtml5 />, <FaCss3Alt />, <SiJquery />, <FaGithub />]
+         tachstack: [<FaHtml5 height="1em" width="1em" />, <FaCss3Alt height="1em" width="1em" />, <SiJquery height="1em" width="1em" />, <FaGithub height="1em" width="1em" />]
       },
    ];
    return (
@@ -122,13 +124,14 @@ const Projects = () => {
 
                      <figure className="relative w-full pb-[87%] border border-gray-300 bg-white">
                         <Image src={item?.logo} className="w-full absolute object-cover" alt={item?.name ?? 'Projects'} />
-<div className="techicon absolute bottom-1 sm:bottom-0 flex w-full justify-center">
-                            {item?.tachstack?.map((tech, i) =>
-                               <span key={i} className="text-lg bg-gray-100/80 text-black rounded-sm p-1 mr-[1px]" aria-label={tech.type?.displayName || tech.props?.title || 'Technology icon'}>
-                                  {tech}
-                               </span>
-                            )}
-                         </div>
+                        <div className="techicon absolute bottom-1 sm:bottom-0 flex w-full justify-center">
+                           {item?.tachstack?.map((tech, i) =>
+                              <span key={i} className="text-lg bg-gray-100/80 text-black rounded-sm p-1 mr-[1px]" >
+                                 <span className="sr-only">{tech.type?.displayName || tech.props?.title || 'Technology icon'}</span>
+                                 {tech}
+                              </span>
+                           )}
+                        </div>
                      </figure>
 
                      <div className="sm:absolute sm:-top-[100%] group-hover:top-1 z-10 transition-all duration-300 w-full sm:h-full sm:bg-black sm:bg-opacity-75 left-0">
@@ -163,8 +166,8 @@ const Projects = () => {
                   </div>
                ))}
             </div>
-         </div>
-      </div>
+         </div >
+      </div >
    )
 }
 

@@ -1,5 +1,5 @@
 
-import {
+/* import {
    FaFacebook,
    FaTwitter,
    FaInstagram,
@@ -8,10 +8,11 @@ import {
 } from "react-icons/fa6";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6"; */
 import ScrollToTop from "./ScrollToTop";
 
 import Footeremail from "@/app/ui/home/FooterEmail"
+import { FaLinkedin, FaGithub, FaSquareXTwitter } from "@/app/ui/Icons";
 
 
 
@@ -26,17 +27,17 @@ function Footer() {
                   <ul className="flex space-x-5">
                      <li>
                         <a href="https://github.com/tejdevcode/" target="_blank" title="github">
-                           <FaGithub className="text-2xl cursor-pointer" />
+                           <FaGithub className="text-2xl cursor-pointer" height="1em" width="1em" />
                         </a>
                      </li>
                      <li>
                         <a href="https://linkedin.com/in/tej-radadiya" target="_blank" title="linked in">
-                           <FaLinkedin className="text-2xl cursor-pointer" />
+                           <FaLinkedin className="text-2xl cursor-pointer" height="1em" width="1em" />
                         </a>
                      </li>
                      <li>
                         <a href="https://x.com/tejrdev" target="_blank" title="twitter X">
-                           <FaSquareXTwitter className="text-2xl cursor-pointer" />
+                           <FaSquareXTwitter className="text-2xl cursor-pointer" height="1em" width="1em" />
                         </a>
                      </li>
                      <li>
