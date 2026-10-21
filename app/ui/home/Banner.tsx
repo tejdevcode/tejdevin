@@ -1,14 +1,12 @@
-
 "use client"
 import pic from "../../../public/websitedevelopment.png";
 
 /*import { FaLinkedin, FaGithub, FaCss3Alt, FaJsSquare, FaReact } from "react-icons/fa";
 import { FaSquareXTwitter, FaHtml5 } from "react-icons/fa6";*/
 
-/* import { FaSquareFacebook } from "react-icons/fa6";
+/* import { FaSquarefacebook } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaTelegram } from "react-icons/fa6"; */
-
 /* import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6"; */
@@ -16,7 +14,6 @@ import { FaNodeJs } from "react-icons/fa6"; */
 import { BiLogoTypescript } from "react-icons/bi";*/
 
 import { FaLinkedin, FaGithub, FaCss3Alt, FaJsSquare, FaReact, FaSquareXTwitter, FaHtml5, SiNextdotjs, BiLogoTypescript } from "@/app/ui/Icons";
-
 
 
 import { ReactTyped } from "react-typed";
@@ -106,14 +103,14 @@ const Banner = () => {
                            <FaHtml5 className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-red-600 transition-all" height="1em" width="1em" />
                         </a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                           <FaCss3Alt className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-sky-600 transition-all" height="1em" width="1em" />
+                           <FaCss3Alt className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-black transition-all" height="1em" width="1em" />
                         </a>
                      </div>
                   </div>
                </div>
             </div>
             <div className="md:w-[45%] md:ml-10 md:mt-8 mt-8 order-1 mx-auto">
-               <Image src={pic.src} className="" alt="Web Development" width={500} height={360} priority />
+               <Image src={pic.src} className="" alt="Web Development" width={500} height={360} priority fetchPriority="high" />
             </div>
          </div>
       </div >

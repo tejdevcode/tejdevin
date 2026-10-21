@@ -2,7 +2,6 @@
 import Image from "next/image"
 import { StaticImageData } from "next/image"
 import { useEffect } from "react"
-import GLightbox from 'glightbox';
 interface AwardItem {
    image: {
       src: string;
@@ -14,13 +13,17 @@ interface AwardsGalleryProps {
 }
 const AwardsGallery = ({ awards }: AwardsGalleryProps) => {
    useEffect(() => {
-      const lightbox = GLightbox({
-         selector: ".glightbox3",
-         touchNavigation: true,
-         loop: true,
-      })
+      let lightbox: any;
+      import('glightbox').then((mod: any) => {
+         const GLightbox = mod.default;
+         lightbox = GLightbox({
+            selector: ".glightbox3",
+            touchNavigation: true,
+            loop: true,
+         })
+      });
       return () => {
-         lightbox.destroy();
+         if (lightbox) lightbox.destroy();
       };
    }, []);
 

@@ -105,7 +105,7 @@ function Contact() {
                               <Loaderatom />
                            </div>
                         )}
-                        <h1 className="text-xl font-semibold mb-4">Get in Touch</h1>
+                        <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
                         <div className="flex flex-col mb-4">
                            <label className="block text-gray-700 dark:text-gray-200">FullName</label>
                            <input

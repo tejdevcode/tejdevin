@@ -41,12 +41,12 @@ const Header = () => {
                <div className="flex justify-between items-center h-16 px-4 sm:px-0">
                   <div className=" flex space-x-2">
                      <Image src={pic} className="h-12 w-12 rounded-full" alt="Tej R" />
-                     <h2 className="font-semibold text-xl cursor-pointer">
+                     <div className="font-semibold text-xl cursor-pointer">
                         <Link href={'/'}>
                            <span className="PlayfairDisplay">&lt; Tej<span className="text-green-500 "> R </span>/&gt;</span>
                            <span className="text-sm tracking-wide block">Web Developer</span>
                         </Link>
-                     </h2>
+                     </div>
                   </div>
                   {/* desktop navbar */}
                   <div className="flex flex-wrap">
