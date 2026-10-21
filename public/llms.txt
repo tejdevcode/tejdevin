@@ -11,17 +11,20 @@ Web Developer specializing in React, Next.js, TypeScript, Tailwind CSS, and mode
 - Responsive Design, Accessibility, Performance Optimization
 
 ## Featured Projects
-- **Teahouse** - Next.js 15 App Router, Vercel, Neon Postgres
-- **ReactGarden** - React + Headless WordPress (WPGraphQL/ACF), Netlify
-- **wpacfpro** - WordPress ACF + PHP on Pantheon
-- **nextDeshboard** - Next.js 15 Dashboard with Neon Postgres
-- **TailwindBurger** - Tailwind CSS + jQuery
-- **Blutique** - SASS/SCSS
-- **BootstrapVibe** - Bootstrap + SASS
-- **CareHTML** - Vanilla HTML/CSS/jQuery
+- [**Teahouse**](https://nextjstea.vercel.app/) - Next.js 15 App Router, Vercel, Neon Postgres
+- [**ReactGarden**](https://reactwptype.netlify.app/) - React + Headless WordPress (WPGraphQL/ACF), Netlify
+- [**wpacfpro**](https://dev-wpacfpro.pantheonsite.io/) - WordPress ACF + PHP on Pantheon
+- [**nextDeshboard**](https://nextjsdashapp.vercel.app/) - Next.js 15 Dashboard with Neon Postgres
+- [**TailwindBurger**](https://tejdevcode.github.io/tailwindspotlight/) - Tailwind CSS + jQuery
+- [**Blutique**](https://tejdevcode.github.io/Blutiquegit/) - SASS/SCSS
+- [**BootstrapVibe**](https://tejdevcode.github.io/bootstrapvibe/) - Bootstrap + SASS
+- [**CareHTML**](https://tejdevcode.github.io/htmlproject/) - Vanilla HTML/CSS/jQuery
 
 ## Contact
-- Email: tejrdevcode@gmail.com
-- LinkedIn: linkedin.com/in/tej-radadiya
-- GitHub: github.com/tejdevcode
-- Website: https://tejdevin.vercel.app
+- [Email](mailto:tejrdevcode@gmail.com)
+- [LinkedIn](https://linkedin.com/in/tej-radadiya)
+- [GitHub](https://github.com/tejdevcode)
+- [Website](https://tejdevin.vercel.app)
+
+## Source Code
+- [Portfolio Repository](https://github.com/tejdevcode/tejr-portfolio)
