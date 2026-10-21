@@ -2,8 +2,8 @@
 "use client"
 import pic from "../../../public/websitedevelopment.png";
 
-import { FaLinkedin, FaGithub, FaCss3Alt, FaJsSquare, FaReact } from "react-icons/fa";
-import { FaSquareXTwitter, FaHtml5 } from "react-icons/fa6";
+/*import { FaLinkedin, FaGithub, FaCss3Alt, FaJsSquare, FaReact } from "react-icons/fa";
+import { FaSquareXTwitter, FaHtml5 } from "react-icons/fa6";*/
 
 /* import { FaSquareFacebook } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
@@ -12,8 +12,10 @@ import { FaTelegram } from "react-icons/fa6"; */
 /* import { SiMongodb } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6"; */
-import { SiNextdotjs } from "react-icons/si"
-import { BiLogoTypescript } from "react-icons/bi";
+/*import { SiNextdotjs } from "react-icons/si"
+import { BiLogoTypescript } from "react-icons/bi";*/
+
+import { FaLinkedin, FaGithub, FaCss3Alt, FaJsSquare, FaReact, FaSquareXTwitter, FaHtml5, SiNextdotjs, BiLogoTypescript } from "@/app/ui/Icons";
 
 
 
@@ -63,17 +65,17 @@ const Banner = () => {
                      <ul className="flex space-x-5 justify-center">
                         <li>
                            <a href="https://github.com/tejdevcode/" target="_blank" aria-label="Github">
-                              <FaGithub className="text-2xl cursor-pointer hover:text-black transition-all" />
+                              <FaGithub className="text-2xl cursor-pointer hover:text-black transition-all" height="1em" width="1em" />
                            </a>
                         </li>
                         <li>
                            <a href="https://linkedin.com/in/tej-radadiya" target="_blank" aria-label="Linked in">
-                              <FaLinkedin className="text-2xl cursor-pointer hover:text-cyan-600 transition-all" />
+                              <FaLinkedin className="text-2xl cursor-pointer hover:text-cyan-600 transition-all" height="1em" width="1em" />
                            </a>
                         </li>
                         <li>
                            <a href="https://x.com/tejrdev" target="_blank" aria-label="Twitter/X">
-                              <FaSquareXTwitter className="text-2xl cursor-pointer hover:text-black transition-all" />
+                              <FaSquareXTwitter className="text-2xl cursor-pointer hover:text-black transition-all" height="1em" width="1em" />
                            </a>
                         </li>
 
@@ -89,22 +91,22 @@ const Banner = () => {
                      <h2 className="font-bold text-center">Currently working on</h2>
                      <div className="flex space-x-5 justify-center">
                         <a href="https://react.dev/" target="_blank">
-                           <FaReact className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-cyan-600 transition-all" title="ReactJs" />
+                           <FaReact className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-cyan-600 transition-all" height="1em" width="1em" />
                         </a>
                         <a href="https://nextjs.org/" target="_blank">
-                           <SiNextdotjs className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-black transition-all" title="NextJs" />
+                           <SiNextdotjs className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-black transition-all" height="1em" width="1em" />
                         </a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                           <FaJsSquare className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-yellow-400 transition-all" title="Javascript" />
+                           <FaJsSquare className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-yellow-400 transition-all" height="1em" width="1em" />
                         </a>
                         <a href="https://www.typescriptlang.org/" target="_blank">
-                           <BiLogoTypescript className="text-3xl md:text-4xl hover:scale-110 duration-200 cursor-pointer -mt-[1px] hover:text-sky-600 transition-all" title="Typescript" />
+                           <BiLogoTypescript className="text-3xl md:text-4xl hover:scale-110 duration-200 cursor-pointer -mt-[1px] hover:text-sky-600 transition-all" height="1em" width="1em" />
                         </a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                           <FaHtml5 className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-red-600 transition-all" title="HTML" />
+                           <FaHtml5 className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-red-600 transition-all" height="1em" width="1em" />
                         </a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                           <FaCss3Alt className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-sky-600 transition-all" title="CSS" />
+                           <FaCss3Alt className="text-2xl md:text-3xl hover:scale-110 duration-200 cursor-pointer hover:text-sky-600 transition-all" height="1em" width="1em" />
                         </a>
                      </div>
                   </div>

@@ -1,8 +1,10 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { MdOutlineLightMode } from "react-icons/md";
-import { RiMoonClearFill } from "react-icons/ri";
+/* import { MdOutlineLightMode } from "react-icons/md";
+import { RiMoonClearFill } from "react-icons/ri"; */
+
+import { MdOutlineLightMode, RiMoonClearFill } from "@/app/ui/Icons";
 
 const DarkMode = () => {
    const [darkmode, setDarkmode] = useState(true);

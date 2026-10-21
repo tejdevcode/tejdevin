@@ -2,11 +2,13 @@
 
 import React, { useState } from "react";
 import pic from "../../public/tej_pic.jpg";
-import { AiOutlineMenu } from "react-icons/ai";
-import { IoCloseSharp } from "react-icons/io5";
+/* import { AiOutlineMenu } from "react-icons/ai";
+import { IoCloseSharp } from "react-icons/io5"; */
 import Link from "next/link";
 import Image from "next/image";
 import DarkMode from "./DarkMode";
+
+import { AiOutlineMenu, IoCloseSharp } from "@/app/ui/Icons";
 
 const Header = () => {
    const [menu, setMenu] = useState(false);
@@ -60,7 +62,7 @@ const Header = () => {
                         ))}
                      </ul>
                      <div onClick={() => setMenu(!menu)} className="md:hidden">
-                        {menu ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
+                        {menu ? <IoCloseSharp /> : <AiOutlineMenu />}
                      </div>
                      {/* <div className="hidden lg:inline-block ml-4 -mt-1">
                      <button className="bg-green-500 px-6 py-1 rounded-md text-white hover:bg-green-600 duration-200">
