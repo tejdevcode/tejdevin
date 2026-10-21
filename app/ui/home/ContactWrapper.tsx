@@ -5,4 +5,5 @@ const Contact = dynamic(() => import("./Contact"), {
    ssr: false,
 });
 
+
 export default Contact;
